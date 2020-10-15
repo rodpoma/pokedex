@@ -4,7 +4,9 @@ const pokemonList = ({pokemon}) => {
   return (
     <div>
       {pokemon.map(poke => (
-        <div key={poke}>{poke}</div>
+        <a href={poke.url}>
+          <p key={poke}>{poke.name}</p>
+        </a>
       ))}
     </div>
   );
